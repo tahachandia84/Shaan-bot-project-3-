@@ -16,7 +16,7 @@ module.exports.run = async function({ api, event, Users, Currencies }) {
         var TOKEN = "6628568379%7Cc1e620fa708a1d5696fb991c1bde5662";
         var data = await Currencies.getData(event.senderID);
         var money = data.money
-        if( money < 696) api.sendMessage(`You don't have enough money\n\nYou can use this command to earn some money ${global.config.PREFIX}kiss\n\nCreated by: 𝑴𝑻𝑿 💚✨ (kìrâñ RajPööt ☠️🏴‍☠️) `, event.threadID, event.messageID) //thay số tiền cần trừ vào 0, xóa money = 0
+        if( money < 696) api.sendMessage(`You don't have enough money\n\nYou can use this command to earn some money ${global.config.PREFIX}kiss\n\nCreated by: 𝐓𝐗𝐃 💚✨ (𝐩𝐠𝐥𝐢 ☠️🏴‍☠️) `, event.threadID, event.messageID) //thay số tiền cần trừ vào 0, xóa money = 0
         else {
         var tile = Math.floor(Math.random() * 101);
         
